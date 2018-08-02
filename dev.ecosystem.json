@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-cce-ico",
+  "script": "dist/index.js",
+  "autorestart": true,
+  "watch": [ "dist" ],
+  "ignore_watch": [ "src", "node_modules" ],
+  "env": {
+    "ENV": "dev",
+    "PORT": 3375,
+    "DEBUG": "",
+    "DEBUG_COLORS": true,
+    "DEBUG_DEPTH": 6,
+    "MONGODB_CONNECTION": "mongodb://localhost:27017/cceico"
+  }
+}
