@@ -1,13 +1,15 @@
+/**
+ * Application entry point
+ */
 
 require('module-alias/register')
-
 import express = require('express')
 
 const app = express()
 const port = process.env.PORT
 
 app.get('/', (req, res)=>{
-    res.send("crypto connector proxy to pass request from socket to kafka\n")
+    res.send("ICO (Initial coin offering) for our CCE (Crypto currency exchange)\n")
 });
 
 const server = app.listen(port, (err) => {
