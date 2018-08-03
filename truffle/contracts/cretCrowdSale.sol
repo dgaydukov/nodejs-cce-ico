@@ -15,7 +15,7 @@ contract CretCrowdsale is CappedCrowdsale, RefundableCrowdsale, MintedCrowdsale 
         uint256 _cap,
         MintableToken _token,
         uint256 _goal
-)
+    )
     public
     Crowdsale(_rate, _wallet, _token)
     CappedCrowdsale(_cap)
