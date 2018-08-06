@@ -9,7 +9,7 @@
 
 ### Description
 
-This project is a website of our ICO. 
+This project is a website of our ICO. Here user can buy our tokens not only with ethereum but with other cryptocurrencies, like bitcoin.
 
 ### Installation
 
