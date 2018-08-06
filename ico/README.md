@@ -11,7 +11,7 @@
 This project is a set of 2 ico contracts written on solidity:
 * [Token](https://github.com/dgaydukov/nodejs-cce-ico/blob/master/ico/contracts/cretToken.sol) - the contract that manage token logic
 * [CrowdSale](https://github.com/dgaydukov/nodejs-cce-ico/blob/master/ico/contracts/cretCrowdSale.sol) - the contract to manage ico itself
-For more information about this you can read on our [whitepaper](https://github.com/dgaydukov/nodejs-cce-ico/blob/master/whitepaper.md)
+For more information about this you can read on our [whitepaper](https://github.com/dgaydukov/nodejs-cce-ico/blob/master/ico/whitepaper.md)
 
 ### Installation
 
@@ -44,6 +44,6 @@ npm install -E openzeppelin-solidity
 
 
 
-## Authors
+### Authors
 
 * **Gaydukov Dmitiry** - *Take a look* - [How to become a Senior Javascript Developer](https://github.com/dgaydukov/how-to-become-a-senior-js-developer)
