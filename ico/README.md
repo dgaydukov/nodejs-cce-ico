@@ -3,6 +3,7 @@
 ## Content
 * [Description](#description)
 * [Installation](#installation)
+* [Run](#run)
 * [Built With](#built-with)
 * [Authors](#authors)
 
@@ -41,7 +42,17 @@ npm init
 npm install -E openzeppelin-solidity
 ```
 
+### Run
+```shell
+# run local blockchain with testprc on port different from the mainnet port
+testrpc --port=8546
 
+# attach to geth
+geth attach http://:8546
+
+# compile & deploy smart contract
+truffle migrate --reset
+```
 
 
 ### Authors

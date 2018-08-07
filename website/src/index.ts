@@ -9,7 +9,7 @@ const app = express()
 const port = process.env.PORT
 
 app.get('/', (req, res)=>{
-    res.send("ICO (Initial coin offering) for our CCE (Crypto currency exchange)\n")
+    res.send("ICO Website")
 });
 
 const server = app.listen(port, (err) => {

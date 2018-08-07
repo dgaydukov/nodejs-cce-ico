@@ -4,8 +4,8 @@ pragma solidity ^0.4.23;
 import "../node_modules/openzeppelin-solidity/contracts/token/ERC20/MintableToken.sol";
 
 // Main token smart contract
-contract CRETToken is MintableToken {
-    string public constant name = "Crypto Currency Exchange Token";
+contract cretToken is MintableToken {
+    string public constant name = "CryptoExchangeToken";
     string public constant symbol = "CRET";
     uint8 public constant decimals = 18;
 }

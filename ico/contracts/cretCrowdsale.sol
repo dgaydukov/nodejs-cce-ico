@@ -6,7 +6,7 @@ import "../node_modules/openzeppelin-solidity/contracts/crowdsale/distribution/R
 import "../node_modules/openzeppelin-solidity/contracts/crowdsale/validation/CappedCrowdsale.sol";
 import "../node_modules/openzeppelin-solidity/contracts/token/ERC20/MintableToken.sol";
 
-contract CretCrowdsale is CappedCrowdsale, RefundableCrowdsale, MintedCrowdsale {
+contract cretCrowdsale is CappedCrowdsale, RefundableCrowdsale, MintedCrowdsale {
     constructor(
         uint256 _openingTime,
         uint256 _closingTime,
