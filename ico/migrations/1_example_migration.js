@@ -6,8 +6,8 @@ module.exports = (deployer, network, accounts)=>{
     const closingTime = 1535673600000; // 31 of august 2018
     const rate = new web3.BigNumber(10); // 10 tokens for 1 ether
     const wallet = '0x1f7025b5e31fa3ca4939dcc97d575ea15b7f3347';
-    const cap = 200;
-    const goal = 100;
+    const cap = 10;
+    const goal = 1;
 
     return deployer
         .then(() => {
