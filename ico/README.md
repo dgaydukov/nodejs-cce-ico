@@ -52,6 +52,20 @@ geth attach http://:8546
 
 # compile & deploy smart contract
 truffle migrate --reset
+
+# go to truffle console to check token balance
+truffle console
+
+# send money to contract to check how it works
+tokenAddr="0xf0e8dfa40863f871d1f992fe2d9e22c02bf3b1a6" # token smart contract address
+crowdsaleAddr="0xe590a8b441603c47fe79e4435a220ffd3d8d2e94" # crowdsale smart contract address
+myAddr="0xa2ca1db1afb97aa2caac29b68b72f020242baf6a" # some address from which we will test token transfer
+# get token smart-contract instance
+token=cretToken.at(t)
+token.balanceOf(account) # 0
+# send money
+web3.eth.sendTransaction({from: myAddr, to: crowdsaleAddr, value: web3.toWei(0.01, 'ether'), gas: 1000000})
+token.balanceOf(account) # 10
 ```
 
 
