@@ -15,14 +15,9 @@
 module.exports = {
     networks: {
         development: {
-            host: "localhost",
+            host: "127.0.0.1",
             port: 8546,
             network_id: "*"
         }
-    },
-    rpc: {
-        host: "localhost",
-        gas: 10000000,
-        port: 8546
     },
 };
