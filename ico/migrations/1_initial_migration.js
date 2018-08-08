@@ -2,12 +2,12 @@ const token = artifacts.require("../contracts/cretToken");
 const crowdsale = artifacts.require("../contracts/cretCrowdsale");
 
 module.exports = (deployer, network, accounts)=>{
-    const openingTime = 1533081600000; // 1 of august 2018
+    const openingTime = +new Date() + 3600*1000; // 1 of august 2018
     const closingTime = 1535673600000; // 31 of august 2018
-    const rate = new web3.BigNumber(1000); // 1000 tokens for 1 ether
+    const rate = 1; // 1000 tokens for 1 ether
     const wallet = '0x1f7025b5e31fa3ca4939dcc97d575ea15b7f3347';
-    const cap = 10;
-    const goal = 1;
+    const cap = 500 * 10**18;
+    const goal = 100 * 10**18;
 
     return deployer
         .then(() => {
